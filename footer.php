@@ -1,3 +1,4 @@
+<!--Footer of project-->
 </div>
 <footer>
   <div>
