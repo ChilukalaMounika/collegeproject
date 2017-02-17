@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
+  
+<!--Dynamic Title, Description called for each page using switch-->
+  
 <?php
 $page=$_GET['page'];
 if ($_GET['page']=="train")
@@ -51,13 +53,13 @@ switch($page)
 }
  ?>
 
-<title> <?php echo $title;?> </title>
-<meta name="description" content="<?php echo $desc; ?>"/>
-<link rel="author" href="https://plus.google.com/"/>
+<title> <?php echo $title;?> </title> <!--prints title-->
+<meta name="description" content="<?php echo $desc; ?>"/><!--prints description-->
+<link rel="author" href="https://plus.google.com/"/> <!--meta for social sharing like facebook, google and many more-->
 
-<meta property="og:title" content="<?php echo $title; ?>"/>
+<meta property="og:title" content="<?php echo $title; ?>"/><!--meta for social sharing like facebook, google and many more-->
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="http://spotyourtrain.info/includes/icons/train.png"/>
+<meta property="og:image" content="http://spotyourtrain.info/includes/icons/train.png"/> <!--favicon-->
 <meta property="og:url" content='<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>'/>
 <meta property="og:description" content="<?php echo $desc; ?>"/>
 <meta property="og:site_name" content="Spotyourtrain" />
